@@ -1,32 +1,63 @@
-# React + TypeScript + Vite
+# Akshita Sachdeva — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal portfolio website built to showcase my projects, experience, leadership journey, and work across software development and intelligent systems.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio brings together:
 
-## React Compiler
+- Technical projects
+- Industry and research experiences
+- Leadership and community contributions
+- Certifications and achievements
+- Contact information and professional links
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Featured Projects
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- **ASD Prognosis** — AI-powered Autism Spectrum Disorder screening system using XGBoost and computer vision.
+- **AyushScan** — Healthcare bill intelligence platform leveraging OCR and generative AI.
+- **EV Adoption Forecasting** — Machine learning based forecasting for electric vehicle adoption trends.
+- **NeuroAdapt AI** — Adaptive learning platform focused on accessibility and personalized education.
+
+## Features
+
+- Responsive design
+- Dark and light mode support
+- Dedicated project pages
+- Interactive experience timeline
+- Certification showcase
+- Downloadable resume
+- Optimized for recruiters and hiring managers
+
+## Running Locally
+
+```bash
+git clone <repo-url>
+cd <repo-name>
+
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Deployment
+
+The portfolio is deployed using Vercel.
+
+## Live Website
+
+🌐 https://portfolio-as-2107.vercel.app/
+
+
+
+---
+
+Built with attention to simplicity, usability, and thoughtful design.
