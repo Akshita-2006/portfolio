@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import { Mail, Phone, Code2, Download, Send } from "lucide-react";
+import { Mail, Phone, Code2, Download, Send, Loader2 } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Card } from "@/components/ui/Card";
 import { Button, LinkButton } from "@/components/ui/Button";
@@ -47,21 +48,48 @@ const CONTACT_LINKS = [
   },
 ].filter((link) => !!link.label && !!link.href);
 
+type SubmitState = "idle" | "loading" | "success" | "error";
+
 export function Contact() {
+  const [status, setStatus] = useState<SubmitState>("idle");
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitSuccessful },
+    formState: { errors },
   } = useForm<ContactFormValues>();
 
-  const onSubmit = (data: ContactFormValues) => {
-    const subject = encodeURIComponent(`Portfolio inquiry from ${data.name}`);
-    const body = encodeURIComponent(
-      `${data.message}\n\n— ${data.name} (${data.email})`,
-    );
-    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-    reset();
+  const onSubmit = async (data: ContactFormValues) => {
+    if (!profile.web3formsAccessKey) {
+      window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(
+        `Portfolio inquiry from ${data.name}`,
+      )}&body=${encodeURIComponent(`${data.message}\n\n— ${data.name} (${data.email})`)}`;
+      return;
+    }
+
+    setStatus("loading");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: profile.web3formsAccessKey,
+          subject: `Portfolio inquiry from ${data.name}`,
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        }),
+      });
+      const result = await res.json();
+      if (result.success) {
+        setStatus("success");
+        reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -176,15 +204,28 @@ export function Contact() {
                 type="submit"
                 variant="primary"
                 className="w-full sm:w-auto"
+                disabled={status === "loading"}
               >
-                <Send size={15} />
-                Send message
+                {status === "loading" ? (
+                  <Loader2 size={15} className="animate-spin" />
+                ) : (
+                  <Send size={15} />
+                )}
+                {status === "loading" ? "Sending…" : "Send message"}
               </Button>
 
-              {isSubmitSuccessful && (
-                <p className="text-sm text-ink-500 dark:text-ink-400">
-                  Your email client should have opened — thanks for reaching
-                  out.
+              {status === "success" && (
+                <p className="text-sm text-ink-600 dark:text-ink-300">
+                  Thanks for reaching out — I&apos;ll get back to you soon.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-red-500">
+                  Something went wrong. Please email me directly at{" "}
+                  <a href={`mailto:${profile.email}`} className="underline">
+                    {profile.email}
+                  </a>
+                  .
                 </p>
               )}
             </form>

@@ -4,9 +4,11 @@ export const profile = {
   tagline:
     "Building software products and intelligent systems across healthcare, geospatial analytics, and data-driven technologies.",
   email: "akshitasachdeva46@gmail.com",
-  phone: "+91 92501 55303",
+  phone: "",
   location: "New Delhi, India",
   resumeUrl: "/resume.pdf",
+  // Get a free access key at https://web3forms.com (just enter your email, no signup) and paste it here.
+  web3formsAccessKey: "6c2adb5f-013a-4924-ac66-f62c793b8543",
   social: {
     github: "https://github.com/Akshita-2006",
     linkedin: "https://www.linkedin.com/in/akshita-sachdeva/",
