@@ -37,7 +37,7 @@ export const profile = {
     paragraphs: [
       "I'm a Computer Science undergraduate at Bharati Vidyapeeth's College of Engineering with a growing interest in software engineering, intelligent systems, and data-driven technologies.",
 
-      "Over the past few years, I've worked on projects spanning healthcare AI, geospatial analytics, forecasting systems, and full-stack development — building solutions designed not just to work in theory, but to create meaningful impact in practice.",
+      "Over the past years, I've worked on projects spanning healthcare AI, geospatial analytics, forecasting systems, and full-stack development building solutions designed not just to work in theory, but to create meaningful impact in practice.",
 
       "Whether it's developing scalable applications, designing machine learning pipelines, or turning ideas into deployable products, I'm most excited by technology that solves real problems for real people.",
     ],
