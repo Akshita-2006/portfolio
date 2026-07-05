@@ -1,15 +1,15 @@
-import { Mail } from 'lucide-react'
-import { GithubIcon, LinkedinIcon } from '@/components/ui/BrandIcons'
-import { profile } from '@/data/profile'
+import { Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/ui/BrandIcons";
+import { profile } from "@/data/profile";
 
 export function Footer() {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-ink-200 dark:border-night-600">
       <div className="container-page flex flex-col items-center gap-4 py-10 sm:flex-row sm:justify-between">
         <p className="text-sm text-ink-500 dark:text-ink-400">
-          © {year} {profile.name}. Built with care.
+          © {year} {profile.name}.
         </p>
         <div className="flex items-center gap-4">
           {profile.social.github && (
@@ -44,5 +44,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
