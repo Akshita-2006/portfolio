@@ -7,8 +7,8 @@ export const profile = {
   phone: "",
   location: "New Delhi, India",
   resumeUrl: "/resume.pdf",
-  // Get a free access key at https://web3forms.com (just enter your email, no signup) and paste it here.
-  web3formsAccessKey: "6c2adb5f-013a-4924-ac66-f62c793b8543",
+  // Set VITE_WEB3FORMS_ACCESS_KEY in .env (see .env.example) — never hardcode it here.
+  web3formsAccessKey: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ?? "",
   social: {
     github: "https://github.com/Akshita-2006",
     linkedin: "https://www.linkedin.com/in/akshita-sachdeva/",

@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Environment variables (keep .env.example committed as documentation)
+.env
+.env.*
+!.env.example
+
 # Scratch folder for dropping raw assets before they're moved into public/
 assets-inbox
 
