@@ -22,7 +22,7 @@ export function About() {
             Bharati Vidyapeeth&apos;s College of Engineering, New Delhi
           </p>
           <p className="text-sm text-ink-500 dark:text-ink-400">
-            Computer Science Undergraduate — AI Research; Intelligent Systems
+            Computer Science Undergraduate — AI Research, Intelligent Systems
             &amp; Software Development
           </p>
         </motion.div>
