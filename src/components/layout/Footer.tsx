@@ -8,8 +8,8 @@ export function Footer() {
   return (
     <footer className="border-t border-ink-200 dark:border-night-600">
       <div className="container-page flex flex-col items-center gap-4 py-10 sm:flex-row sm:justify-between">
-        <p className="text-sm text-ink-500 dark:text-ink-400">
-          © {year} {profile.name}.
+        <p className="flex items-center gap-2 text-sm text-ink-500 dark:text-ink-400">
+          <img src="/sticker.png" alt="" className="h-5 w-5 object-contain" />© {year} {profile.name}.
         </p>
         <div className="flex items-center gap-4">
           {profile.social.github && (
