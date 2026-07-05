@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  /* Pastel, mature palette */
+  --color-lavender: #dcccfd;
+  --color-lavender-soft: #ece3fd;
+  --color-sage: #c9d8b6;
+  --color-sage-soft: #e3ead9;
+  --color-peach: #f8d6c2;
+  --color-peach-soft: #fbe8dc;
+  --color-cream: #fff8f0;
+  --color-warm-white: #fafafa;
+
+  /* Ink scale — light mode text/surfaces */
+  --color-ink-950: #16151a;
+  --color-ink-900: #1e1d24;
+  --color-ink-800: #2a2932;
+  --color-ink-700: #3c3a46;
+  --color-ink-600: #57545f;
+  --color-ink-500: #75727d;
+  --color-ink-400: #9b98a1;
+  --color-ink-300: #c3c1c8;
+  --color-ink-200: #e2e0e5;
+  --color-ink-100: #efeef1;
+  --color-ink-50: #f7f6f8;
+
+  /* Dark mode surfaces — deep, warm charcoal (not pure black/neon) */
+  --color-night-950: #0e0e11;
+  --color-night-900: #151519;
+  --color-night-800: #1b1b21;
+  --color-night-700: #232329;
+  --color-night-600: #2c2c34;
+  --color-night-500: #3a3a44;
+
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-fade-up: fade-up 0.6s ease forwards;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-ink-200 dark:border-night-600;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-warm-white text-ink-700 font-sans antialiased;
+    @apply dark:bg-night-950 dark:text-ink-200;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      color-mix(in srgb, currentColor 16%, transparent) 1px,
+      transparent 0
+    );
+    background-size: 26px 26px;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-ink-950 dark:text-ink-50;
+  }
+
+  ::selection {
+    background-color: var(--color-lavender);
+    color: var(--color-ink-950);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-200 dark:bg-night-600;
+    border-radius: 999px;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-12;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
