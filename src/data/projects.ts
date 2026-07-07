@@ -116,6 +116,6 @@ export const projects: Project[] = [
       "Personalized learning experience engine",
       "Roadmap: expanded personalization models and platform integrations",
     ],
-    githubUrl: "https://github.com/tusharsingh212/neuroadapt-ai",
+    githubUrl: "https://github.com/Akshita-2006/NeuroAdapt-AI",
   },
 ];
