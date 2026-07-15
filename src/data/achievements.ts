@@ -17,17 +17,17 @@ export const achievements: AchievementEntry[] = [
       "Secured 3rd position in the QuantumSpark Ideathon.for developing an innovative photonics-based cloud seeding solution using quantum dots and optical sensing technologies.",
   },
   {
-    title: "300+ DSA Problems Solved",
+    title: "400+ DSA Problems Solved",
     description:
       "Solved 300+ data structures and algorithms problems across competitive programming platforms.",
   },
   {
-    title: "LeetCode Rating: 1607",
+    title: "LeetCode Rating: 1635",
     description: "Achieved a LeetCode contest rating of 1607.",
   },
   {
     title: "CodeChef — Global Top 9%",
     description:
-      "Secured Rank 2163 among 25,000 participants in CodeChef Division 4, achieving a Top 9% finish globally.",
+      "Secured Rank 1503 among 24,000 participants in CodeChef Division 4, achieving a Top 6.3% finish globally.",
   },
 ];
