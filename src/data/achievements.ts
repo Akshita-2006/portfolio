@@ -19,14 +19,14 @@ export const achievements: AchievementEntry[] = [
   {
     title: "400+ DSA Problems Solved",
     description:
-      "Solved 300+ data structures and algorithms problems across competitive programming platforms.",
+      "Solved 400+ data structures and algorithms problems across competitive programming platforms.",
   },
   {
     title: "LeetCode Rating: 1635",
     description: "Achieved a LeetCode contest rating of 1607.",
   },
   {
-    title: "CodeChef — Global Top 9%",
+    title: "CodeChef — Global Top 6.3%",
     description:
       "Secured Rank 1503 among 24,000 participants in CodeChef Division 4, achieving a Top 6.3% finish globally.",
   },
