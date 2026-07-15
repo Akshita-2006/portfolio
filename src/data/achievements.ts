@@ -23,7 +23,7 @@ export const achievements: AchievementEntry[] = [
   },
   {
     title: "LeetCode Rating: 1635",
-    description: "Achieved a LeetCode contest rating of 1607.",
+    description: "Achieved a LeetCode contest rating of 1635.",
   },
   {
     title: "CodeChef — Global Top 6.3%",
