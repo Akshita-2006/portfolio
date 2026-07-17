@@ -7,10 +7,10 @@ export const experience: ExperienceEntry[] = [
     period: "2026 — Present",
     current: true,
     points: [
-      "Built GIS-based rainfall visualization systems for Uttarakhand region.",
-      "Developed GeoPandas and Plotly visualizations for spatial datasets.",
-      "Conducted spatial analytics using SRTM elevation data.",
-      "Designed rainfall modeling and data preprocessing pipelines.",
+      "Processed 125 years (1901–2025) of IMD NetCDF meteorological data into analysis-ready geospatial datasets.",
+      "Engineered GIS-based spatial extraction pipelines using GeoPandas, shapefiles, and SRTM elevation data.",
+      "Developed deep learning pipelines with spatio-temporal feature engineering using rainfall, Tmax, Tmin, DTR, and elevation.",
+      "Automated seasonal (JJAS) analysis, model evaluation, and geospatial visualizations across multiple rainfall grid nodes.",
     ],
   },
   {

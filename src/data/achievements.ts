@@ -22,8 +22,8 @@ export const achievements: AchievementEntry[] = [
       "Solved 400+ data structures and algorithms problems across competitive programming platforms.",
   },
   {
-    title: "LeetCode Rating: 1635",
-    description: "Achieved a LeetCode contest rating of 1635.",
+    title: "LeetCode Rating: 1652",
+    description: "Achieved a LeetCode contest rating of 1652.",
   },
   {
     title: "CodeChef — Global Top 6.3%",
