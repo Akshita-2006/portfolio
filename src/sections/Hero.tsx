@@ -91,13 +91,13 @@ export function Hero() {
               ease: [0.22, 1, 0.36, 1],
               delay: 0.15,
             }}
-            className="relative mx-auto w-full max-w-sm lg:max-w-md"
+            className="relative mx-auto w-full max-w-xl lg:max-w-2xl"
           >
             <div className="absolute -inset-10 -z-10 rounded-4xl bg-linear-to-br from-lavender-soft via-peach-soft to-sage-soft opacity-60 blur-3xl dark:opacity-20" />
             <img
               src="/hero-portrait.png"
               alt={profile.name}
-              className="h-auto w-full object-contain mask-[linear-gradient(to_bottom,black_0%,black_88%,transparent_99%)]"
+              className="w-full scale-149 object-contain mask-[linear-gradient(to_bottom,black_0%,black_88%,transparent_99%)]"
               onError={(e) => {
                 e.currentTarget.style.display = "none";
                 const fallback = e.currentTarget.nextElementSibling;
