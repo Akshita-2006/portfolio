@@ -5,7 +5,6 @@ export const experience: ExperienceEntry[] = [
     role: "AI/ML & Research Intern",
     organization: "DRDO",
     period: "June 2026 — July 2026",
-    current: true,
     points: [
       "Processed 125 years (1901–2025) of IMD NetCDF meteorological data into analysis-ready geospatial datasets.",
       "Engineered GIS-based spatial extraction pipelines using GeoPandas, shapefiles, and SRTM elevation data.",

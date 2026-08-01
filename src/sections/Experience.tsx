@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
-import { Tag } from "@/components/ui/Tag";
+// import { Tag } from "@/components/ui/Tag";
 import { ViewCertificatesLink } from "@/components/ui/ViewCertificatesLink";
 import { experience } from "@/data/experience";
 import { fadeUp, viewportOnce } from "@/utils/motion";
