@@ -4,12 +4,12 @@ export const experience: ExperienceEntry[] = [
   {
     role: "AI/ML & Research Intern",
     organization: "DRDO",
-    period: "2026 — Present",
+    period: "June 2026 — July 2026",
     current: true,
     points: [
       "Processed 125 years (1901–2025) of IMD NetCDF meteorological data into analysis-ready geospatial datasets.",
       "Engineered GIS-based spatial extraction pipelines using GeoPandas, shapefiles, and SRTM elevation data.",
-      "Developed deep learning pipelines with spatio-temporal feature engineering using rainfall, Tmax, Tmin, DTR, and elevation.",
+      "Developed deep learning pipelines with spatio-temporal feature engineering using rainfall, Tmax, Tmin, and elevation.",
       "Automated seasonal (JJAS) analysis, model evaluation, and geospatial visualizations across multiple rainfall grid nodes.",
     ],
   },

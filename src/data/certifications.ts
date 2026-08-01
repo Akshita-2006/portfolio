@@ -2,6 +2,12 @@ import type { CertificationEntry } from "./types";
 
 // Internships first (most recent first), then everything else (most recent first).
 export const certifications: CertificationEntry[] = [
+  // {
+  //   title: "AI/ML & Research Intern ",
+  //   issuer: "ISSA, DRDO",
+  //   date: "July 2026",
+  //   image: "/certificates/drdo.png",
+  // },
   {
     title: "Power BI for Business Applications",
     issuer: "Microsoft Elevate × AICTE",
