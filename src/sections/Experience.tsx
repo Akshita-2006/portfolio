@@ -31,12 +31,12 @@ export function Experience() {
               <h3 className="text-lg font-semibold text-ink-950 dark:text-white">
                 {entry.role}
               </h3>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 {entry.current && <Tag tone="sage">Current</Tag>}
                 <span className="text-sm font-medium text-ink-500 dark:text-ink-400">
                   {entry.period}
                 </span>
-              </div>
+              </div> */}
             </div>
             <p className="mt-1 text-sm font-medium text-ink-600 dark:text-ink-300">
               {entry.organization}
