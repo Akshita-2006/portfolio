@@ -25,7 +25,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "AI and Data Analytics Virtual Internship",
     organization: "Shell India × AICTE",
-    period: "Jul 2025 — Aug 2025",
+    period: "July 2025 — Aug 2025",
     points: [
       "Built an EV Adoption Forecasting project using machine learning and time series techniques.",
       "Applied data preprocessing and trend analysis to real-world adoption data.",
