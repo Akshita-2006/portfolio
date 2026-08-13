@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
-// import { Tag } from "@/components/ui/Tag";
 import { ViewCertificatesLink } from "@/components/ui/ViewCertificatesLink";
 import { experience } from "@/data/experience";
 import { fadeUp, viewportOnce } from "@/utils/motion";
@@ -14,7 +13,7 @@ export function Experience() {
       description="Research and industry internships across AI, geospatial systems, and business intelligence."
       tint="lavender"
     >
-      <div className="relative space-y-10 border-l border-ink-200 pl-8 dark:border-night-600 sm:pl-10">
+      <div className="relative space-y-10 pl-8 before:absolute before:bottom-2 before:left-1.25 before:top-2 before:w-px before:bg-ink-200 before:content-[''] dark:before:bg-night-600 sm:pl-10">
         {experience.map((entry, i) => (
           <motion.div
             key={entry.organization + entry.role}
@@ -23,21 +22,21 @@ export function Experience() {
             viewport={viewportOnce}
             variants={fadeUp}
             transition={{ delay: i * 0.05 }}
-            className="relative"
+            className="relative min-w-0"
           >
-            <span className="absolute -left-9.25 top-1.5 h-2.5 w-2.5 rounded-full bg-lavender ring-4 ring-warm-white dark:ring-night-950 sm:-left-11.25" />
+            <span className="absolute -left-8 top-2 h-2.5 w-2.5 rounded-full bg-lavender ring-4 ring-warm-white dark:ring-night-950 sm:-left-10" />
 
-            <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-              <h3 className="text-lg font-semibold text-ink-950 dark:text-white">
+            <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-baseline gap-4">
+              <h3 className="min-w-0 wrap-break-word text-lg font-semibold leading-snug text-ink-950 dark:text-white">
                 {entry.role}
               </h3>
-              <div className="flex items-center gap-2">
-                <span className="text-sm font-medium text-ink-500 dark:text-ink-400">
+              <div className="flex items-center justify-end">
+                <span className="whitespace-nowrap text-right text-sm font-medium text-ink-500 dark:text-ink-400">
                   {entry.period}
                 </span>
               </div>
             </div>
-            <p className="mt-1 text-sm font-medium text-ink-600 dark:text-ink-300">
+            <p className="mt-1 min-w-0 wrap-break-word text-sm font-medium text-ink-600 dark:text-ink-300">
               {entry.organization}
             </p>
 
@@ -45,10 +44,10 @@ export function Experience() {
               {entry.points.map((point, idx) => (
                 <li
                   key={idx}
-                  className="flex gap-2 text-sm leading-relaxed text-ink-500 dark:text-ink-400"
+                  className="flex min-w-0 gap-2 text-sm leading-relaxed text-ink-500 dark:text-ink-400"
                 >
                   <span className="mt-2 h-1 w-1 flex-none rounded-full bg-ink-400 dark:bg-ink-500" />
-                  {point}
+                  <span className="min-w-0 flex-1 wrap-break-word">{point}</span>
                 </li>
               ))}
             </ul>
