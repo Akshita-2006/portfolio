@@ -3,26 +3,44 @@ import type { SkillCategory } from "./types";
 export const skills: SkillCategory[] = [
   {
     category: "Programming",
-    items: ["C++", "Python", "Java", "JavaScript", "SQL"],
+    items: ["C", "C++", "Python", "Java", "JavaScript", "SQL"],
   },
   {
     category: "Frontend",
-    items: ["React", "HTML", "CSS", "Tailwind"],
+    items: ["React.js", "HTML", "CSS", "Tailwind"],
   },
   {
     category: "Backend",
-    items: ["Flask", "Streamlit", "REST APIs"],
+    items: ["Node.js", "Flask", "Streamlit", "REST APIs"],
   },
   {
-    category: "AI & Data Science",
-    items: ["XGBoost", "OpenCV", "NumPy", "Pandas", "GeoPandas", "Plotly"],
+    category: "AI/ML & Data Science",
+    items: [
+      "XGBoost",
+      "OpenCV",
+      "NumPy",
+      "Pandas",
+      "GeoPandas",
+      "Plotly",
+      "MLP",
+      "GRU",
+      "LSTM",
+    ],
   },
   {
-    category: "Tools",
-    items: ["Git", "GitHub", "Vercel", "MySQL"],
+    category: "Tools & Frameworks",
+    items: [
+      "Git",
+      "GitHub",
+      "Vercel",
+      "MySQL",
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+    ],
   },
   {
     category: "Core CS",
-    items: ["DSA", "DBMS", "OOP", "Operating Systems"],
+    items: ["DSA", "DBMS", "OOP", "Operating Systems", "Computer Networks"],
   },
 ];

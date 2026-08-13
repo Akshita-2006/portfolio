@@ -6,10 +6,10 @@ export const experience: ExperienceEntry[] = [
     organization: "DRDO",
     period: "June 2026 — July 2026",
     points: [
-      "Processed 125 years (1901–2025) of IMD NetCDF meteorological data into analysis-ready geospatial datasets.",
+      "Processed 75 years (1950–2025) of IMD NetCDF meteorological data into analysis-ready geospatial datasets.",
       "Engineered GIS-based spatial extraction pipelines using GeoPandas, shapefiles, and SRTM elevation data.",
       "Developed deep learning pipelines with spatio-temporal feature engineering using rainfall, Tmax, Tmin, and elevation.",
-      "Automated seasonal (JJAS) analysis, model evaluation, and geospatial visualizations across multiple rainfall grid nodes.",
+      "Automated seasonal (JJAS) analysis, model evaluation, and geospatial visualizations across multiple rainfall grid nodes for Chamoli district.",
     ],
   },
   {
