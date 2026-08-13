@@ -8,7 +8,7 @@ export const experience: ExperienceEntry[] = [
     points: [
       "Processed 75 years (1950–2025) of IMD NetCDF meteorological data into analysis-ready geospatial datasets.",
       "Engineered GIS-based spatial extraction pipelines using GeoPandas, shapefiles, and SRTM elevation data.",
-      "Developed deep learning pipelines with spatio-temporal feature engineering using rainfall, Tmax, Tmin, and elevation.",
+      "Developed deep learning pipelines for MLP, LSTM, and GRU models using spatio-temporal feature engineering with rainfall, temperature, and elevation data.",
       "Automated seasonal (JJAS) analysis, model evaluation, and geospatial visualizations across multiple rainfall grid nodes for Chamoli district.",
     ],
   },
