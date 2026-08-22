@@ -2,45 +2,27 @@ import type { SkillCategory } from "./types";
 
 export const skills: SkillCategory[] = [
   {
-    category: "Programming",
-    items: ["C", "C++", "Python", "Java", "JavaScript", "SQL"],
+    category: "Languages",
+    items: ["C", "C++", "JavaScript", "TypeScript", "Python", "Java", "SQL"],
   },
   {
     category: "Frontend",
-    items: ["React.js", "HTML", "CSS", "Tailwind"],
+    items: ["React.js", "React Router", "TanStack Query", "Zustand", "HTML5", "CSS3", "Tailwind CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Flask", "Streamlit", "REST APIs"],
+    items: ["Node.js", "Express.js", "Flask", "REST APIs", "JWT", "bcrypt", "Zod", "Socket.io"],
   },
   {
-    category: "AI/ML & Data Science",
-    items: [
-      "XGBoost",
-      "OpenCV",
-      "NumPy",
-      "Pandas",
-      "GeoPandas",
-      "Plotly",
-      "MLP",
-      "GRU",
-      "LSTM",
-    ],
+    category: "Databases & Cloud",
+    items: ["MongoDB", "Mongoose", "MySQL", "SQLite", "Supabase Storage", "Vercel"],
   },
   {
-    category: "Tools & Frameworks",
-    items: [
-      "Git",
-      "GitHub",
-      "Vercel",
-      "MySQL",
-      "PyTorch",
-      "TensorFlow",
-      "Scikit-learn",
-    ],
+    category: "Core CS & Tools",
+    items: ["DSA", "OOP", "DBMS", "Operating Systems", "Computer Networks", "Git", "GitHub"],
   },
   {
-    category: "Core CS",
-    items: ["DSA", "DBMS", "OOP", "Operating Systems", "Computer Networks"],
+    category: "AI/ML & Data",
+    items: ["NumPy", "Pandas", "Scikit-learn", "XGBoost", "OpenCV", "PyTorch", "TensorFlow", "GeoPandas"],
   },
 ];

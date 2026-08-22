@@ -2,42 +2,6 @@ import type { Project } from "./types";
 
 export const projects: Project[] = [
   {
-    slug: "asd-prognosis",
-    title: "ASD Prognosis",
-    tagline: "AI-powered Autism Spectrum Disorder screening system",
-    category: "Healthcare AI",
-    status: "Live",
-    description:
-      "An AI-powered Autism Spectrum Disorder screening system combining AQ-10 screening, facial behavioural analysis, and explainable machine learning for interpretable probability estimation.",
-    longDescription: [
-      "ASD Prognosis is a screening system designed to support early identification of Autism Spectrum Disorder by combining structured questionnaire data (AQ-10) with facial behavioural analysis derived from computer vision.",
-      "The system uses an XGBoost classifier trained on screening data, paired with an OpenCV-based facial analysis pipeline, to produce a calibrated screening probability rather than a binary output — making the result more interpretable for clinicians and caregivers.",
-      "The full pipeline is deployed as an interactive Streamlit application, with explainable AI components that surface which features drove a given prediction.",
-    ],
-    tech: [
-      "XGBoost",
-      "OpenCV",
-      "Streamlit",
-      "Python",
-      "AQ-10",
-      "Explainable AI",
-    ],
-    metrics: [
-      { label: "Accuracy", value: "96.91%" },
-      { label: "F1 Score", value: "0.952" },
-      { label: "ROC-AUC", value: "0.999" },
-    ],
-    features: [
-      "Explainable AI predictions",
-      "Clinical probability calibration",
-      "Facial behavioural analysis via OpenCV",
-      "Interactive Streamlit deployment",
-    ],
-    githubUrl: "https://github.com/Akshita-2006/ASDPrognosis",
-    demoUrl: "https://asdprognosis.streamlit.app/",
-    featured: true,
-  },
-  {
     slug: "ayushscan",
     title: "AyushScan",
     tagline: "AI-powered healthcare bill analysis platform",
@@ -72,30 +36,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "ev-adoption-forecasting",
-    title: "EV Adoption Forecasting",
-    tagline:
-      "Forecasting electric mobility adoption using machine learning and time series analysis",
-    category: "Forecasting",
-    status: "Live",
-    description:
-      "A forecasting system that leverages machine learning and historical EV adoption data to model future electric mobility trends for infrastructure and sustainability planning.",
-    longDescription: [
-      "This project forecasts electric vehicle adoption trends by applying time series and machine learning techniques to historical adoption data.",
-      "The pipeline includes data preprocessing, outlier handling, and comparison of forecasting models to identify trends useful for sustainability planning and policy decisions.",
-    ],
-    tech: ["Python", "Pandas", "Time Series", "Machine Learning"],
-    features: [
-      "Data preprocessing and cleaning",
-      "Outlier handling",
-      "Forecasting model comparison",
-      "Trend visualization",
-      "Sustainability-focused applications",
-    ],
-    githubUrl: "https://github.com/Akshita-2006/WEEK-1",
-    demoUrl: "https://ev-adoption-forecasting-model.streamlit.app/",
-  },
-  {
     slug: "teamflow",
     title: "TeamFlow",
     tagline: "Full-stack project delivery workspace for team collaboration",
@@ -126,5 +66,65 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/Akshita-2006/TeamFlow",
     demoUrl: "https://team-flow-client-delta.vercel.app/",
+    featured: true,
+  },
+  {
+    slug: "asd-prognosis",
+    title: "ASD Prognosis",
+    tagline: "AI-powered Autism Spectrum Disorder screening system",
+    category: "Healthcare AI",
+    status: "Live",
+    description:
+      "An AI-powered Autism Spectrum Disorder screening system combining AQ-10 screening, facial behavioural analysis, and explainable machine learning for interpretable probability estimation.",
+    longDescription: [
+      "ASD Prognosis is a screening system designed to support early identification of Autism Spectrum Disorder by combining structured questionnaire data (AQ-10) with facial behavioural analysis derived from computer vision.",
+      "The system uses an XGBoost classifier trained on screening data, paired with an OpenCV-based facial analysis pipeline, to produce a calibrated screening probability rather than a binary output - making the result more interpretable for clinicians and caregivers.",
+      "The full pipeline is deployed as an interactive Streamlit application, with explainable AI components that surface which features drove a given prediction.",
+    ],
+    tech: [
+      "XGBoost",
+      "OpenCV",
+      "Streamlit",
+      "Python",
+      "AQ-10",
+      "Explainable AI",
+    ],
+    metrics: [
+      { label: "Accuracy", value: "96.91%" },
+      { label: "F1 Score", value: "0.952" },
+      { label: "ROC-AUC", value: "0.999" },
+    ],
+    features: [
+      "Explainable AI predictions",
+      "Clinical probability calibration",
+      "Facial behavioural analysis via OpenCV",
+      "Interactive Streamlit deployment",
+    ],
+    githubUrl: "https://github.com/Akshita-2006/ASDPrognosis",
+    demoUrl: "https://asdprognosis.streamlit.app/",
+  },
+  {
+    slug: "ev-adoption-forecasting",
+    title: "EV Adoption Forecasting",
+    tagline:
+      "Forecasting electric mobility adoption using machine learning and time series analysis",
+    category: "Forecasting",
+    status: "Live",
+    description:
+      "A forecasting system that leverages machine learning and historical EV adoption data to model future electric mobility trends for infrastructure and sustainability planning.",
+    longDescription: [
+      "This project forecasts electric vehicle adoption trends by applying time series and machine learning techniques to historical adoption data.",
+      "The pipeline includes data preprocessing, outlier handling, and comparison of forecasting models to identify trends useful for sustainability planning and policy decisions.",
+    ],
+    tech: ["Python", "Pandas", "Time Series", "Machine Learning"],
+    features: [
+      "Data preprocessing and cleaning",
+      "Outlier handling",
+      "Forecasting model comparison",
+      "Trend visualization",
+      "Sustainability-focused applications",
+    ],
+    githubUrl: "https://github.com/Akshita-2006/WEEK-1",
+    demoUrl: "https://ev-adoption-forecasting-model.streamlit.app/",
   },
 ];

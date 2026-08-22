@@ -10,7 +10,7 @@ export function Projects() {
       id="projects"
       eyebrow="Projects"
       title="Selected work"
-      description="A mix of research-grade machine learning, healthcare AI, and applied engineering."
+      description="SDE-focused full-stack products first, followed by applied AI and machine learning systems."
       tint="peach"
     >
       <motion.div

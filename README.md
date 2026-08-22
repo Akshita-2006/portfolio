@@ -23,9 +23,9 @@ This portfolio brings together:
 
 ## Featured Projects
 
-- **ASD Prognosis** — AI-powered Autism Spectrum Disorder screening system using XGBoost and computer vision.
 - **AyushScan** — Healthcare bill intelligence platform leveraging OCR and generative AI.
 - **TeamFlow** — Full-stack project delivery workspace with RBAC, task reviews, audit logs, and real-time notifications.
+- **ASD Prognosis** — AI-powered Autism Spectrum Disorder screening system using XGBoost and computer vision.
 - **EV Adoption Forecasting** — Machine learning based forecasting for electric vehicle adoption trends.
 
 ## Features
