@@ -25,8 +25,8 @@ This portfolio brings together:
 
 - **ASD Prognosis** — AI-powered Autism Spectrum Disorder screening system using XGBoost and computer vision.
 - **AyushScan** — Healthcare bill intelligence platform leveraging OCR and generative AI.
+- **TeamFlow** — Full-stack project delivery workspace with RBAC, task reviews, audit logs, and real-time notifications.
 - **EV Adoption Forecasting** — Machine learning based forecasting for electric vehicle adoption trends.
-- **NeuroAdapt AI** — Adaptive learning platform focused on accessibility and personalized education.
 
 ## Features
 
