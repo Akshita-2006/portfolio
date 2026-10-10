@@ -33,6 +33,7 @@ export const projects: Project[] = [
       "Hospital search",
     ],
     githubUrl: "https://github.com/JASKAMRA/AyushSCAN",
+    demoUrl: "https://ayushscan-production.up.railway.app/",
     featured: true,
   },
   {
