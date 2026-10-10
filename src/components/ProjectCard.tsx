@@ -54,7 +54,7 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
           ))}
         </div>
 
-        <div className="mt-6 flex items-center gap-4 border-t border-ink-100 pt-5 dark:border-night-700">
+        <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-ink-100 pt-5 dark:border-night-700">
           <Link
             to={`/projects/${project.slug}`}
             className="text-sm font-medium text-ink-800 underline-offset-4 hover:underline dark:text-ink-100"
@@ -77,7 +77,7 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
               href={project.demoUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-500 hover:text-ink-950 dark:text-ink-400 dark:hover:text-white"
+              className="inline-flex items-center gap-1.5 rounded-full bg-ink-950 px-3 py-1.5 text-sm font-medium text-warm-white transition-colors hover:bg-ink-800 dark:bg-lavender dark:text-ink-950 dark:hover:bg-lavender-soft"
             >
               <ArrowUpRight size={14} />
               Open Live

@@ -4,7 +4,6 @@ const STATUS_STYLES: Record<string, { dot: string; text: string; pulse?: boolean
   Live: { dot: 'bg-sage', text: 'text-ink-600 dark:text-ink-300', pulse: true },
   'Active Development': { dot: 'bg-lavender', text: 'text-ink-600 dark:text-ink-300' },
   'Research Prototype': { dot: 'bg-peach', text: 'text-ink-600 dark:text-ink-300' },
-  'Production Prototype': { dot: 'bg-peach', text: 'text-ink-600 dark:text-ink-300' },
 }
 
 const DEFAULT_STYLE = { dot: 'bg-ink-400 dark:bg-ink-500', text: 'text-ink-600 dark:text-ink-300' }
