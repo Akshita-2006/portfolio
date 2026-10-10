@@ -80,7 +80,7 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
               className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-500 hover:text-ink-950 dark:text-ink-400 dark:hover:text-white"
             >
               <ArrowUpRight size={14} />
-              Live Demo
+              Open Live
             </a>
           )}
         </div>

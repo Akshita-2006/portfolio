@@ -80,7 +80,7 @@ export function ProjectDetail() {
             variant="primary"
           >
             <ArrowUpRight size={16} />
-            Live Demo
+            Open Live
           </LinkButton>
         )}
       </motion.div>

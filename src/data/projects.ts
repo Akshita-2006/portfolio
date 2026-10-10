@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "AyushScan",
     tagline: "AI-powered healthcare bill analysis platform",
     category: "Full Stack AI",
-    status: "Production Prototype",
+    status: "Live",
     description:
       "A production-grade healthcare platform that combines OCR, generative AI, and public healthcare datasets to detect overpricing, identify savings opportunities, and improve healthcare accessibility.",
     longDescription: [
